@@ -53,7 +53,7 @@ export-env {
       }
     }
 
-    let virtual_env = 'D:\agentic_ai\agentic_ai_project\simple_chatboot\.venv'
+    let virtual_env = 'D:\python\agentic_ai_projects\simple_chatboot\.venv'
     let bin = 'Scripts'
 
     let is_windows = ($nu.os-info.family) == 'windows'

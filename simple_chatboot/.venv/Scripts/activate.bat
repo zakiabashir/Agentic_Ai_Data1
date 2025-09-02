@@ -27,7 +27,7 @@
     @"%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-@for %%i in ("D:\agentic_ai\agentic_ai_project\simple_chatboot\.venv") do @set "VIRTUAL_ENV=%%~fi"
+@for %%i in ("D:\python\agentic_ai_projects\simple_chatboot\.venv") do @set "VIRTUAL_ENV=%%~fi"
 
 @set "VIRTUAL_ENV_PROMPT=simple_chatboot"
 @if NOT DEFINED VIRTUAL_ENV_PROMPT (

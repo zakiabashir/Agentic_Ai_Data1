@@ -31,7 +31,7 @@ alias deactivate 'test $?_OLD_VIRTUAL_PATH != 0 && setenv PATH "$_OLD_VIRTUAL_PA
 # Unset irrelevant variables.
 deactivate nondestructive
 
-setenv VIRTUAL_ENV 'D:\agentic_ai\agentic_ai_project\simple_chatboot\.venv'
+setenv VIRTUAL_ENV 'D:\python\agentic_ai_projects\simple_chatboot\.venv'
 
 set _OLD_VIRTUAL_PATH="$PATH:q"
 setenv PATH "$VIRTUAL_ENV:q/Scripts:$PATH:q"

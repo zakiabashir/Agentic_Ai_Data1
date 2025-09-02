@@ -8,7 +8,6 @@ from pydantic import BaseModel
 from agents import (
     Agent,
     GuardrailFunctionOutput,
-    InputGuardrail,
     RunContextWrapper,
     Runner,
     OpenAIChatCompletionsModel,

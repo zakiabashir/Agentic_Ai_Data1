@@ -1,11 +1,13 @@
-from decouple import config
+from dotenv import find_dotenv, load_dotenv
+import os
 from agents import  AsyncOpenAI , OpenAIChatCompletionsModel
 
-key=config("GEMINI_API_KEY")
-base_url=config("GEMINI_BASE_URL")
-model_name=config("GEMINI_MODEL_NAME")
+load_dotenv(find_dotenv(), override=True)
 
-#this is a workaround to set client with base url
-client= AsyncOpenAI(api_key=key, base_url=base_url) # Initialize the client with the base URL and api key
-# Initialize the model with the client
-model=OpenAIChatCompletionsModel(model=model_name, openai_client=client)
+api_key = os.getenv("GEMINI_API_KEY")
+base_url = os.getenv("GEMINI_BASE_URL")
+Model = os.getenv("GEMINI_MODEL_NAME")
+
+
+client = AsyncOpenAI(api_key=api_key, base_url=base_url)
+model = OpenAIChatCompletionsModel(openai_client=client, model=Model)

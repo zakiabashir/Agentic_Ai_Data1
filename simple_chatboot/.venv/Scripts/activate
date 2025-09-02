@@ -74,7 +74,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV='D:\agentic_ai\agentic_ai_project\simple_chatboot\.venv'
+VIRTUAL_ENV='D:\python\agentic_ai_projects\simple_chatboot\.venv'
 if ([ "$OSTYPE" = "cygwin" ] || [ "$OSTYPE" = "msys" ]) && $(command -v cygpath &> /dev/null) ; then
     VIRTUAL_ENV=$(cygpath -u "$VIRTUAL_ENV")
 fi

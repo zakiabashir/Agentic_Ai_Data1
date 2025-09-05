@@ -10,3 +10,4 @@ dependencies = [
     "python-decouple>=3.8",
     "python-dotenv>=1.1.1",
 ]
+
